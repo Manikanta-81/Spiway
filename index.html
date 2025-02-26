@@ -1,0 +1,82 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spiway</title>
+        <link rel="icon" type="image/png" href="https://play-lh.googleusercontent.com/Lt7NsIhcO6fRdlOgg01_pF6QPZ8Vjy-z7-lfoJb5P_ftquhsqTSptchQS4qZoOY3KBw=w480-h960-rw">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+    <nav>
+        <div class="logo">
+            <img src="https://play-lh.googleusercontent.com/Lt7NsIhcO6fRdlOgg01_pF6QPZ8Vjy-z7-lfoJb5P_ftquhsqTSptchQS4qZoOY3KBw=w480-h960-rw" alt="Spiway Logo">
+            <h2>Spiway</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Account Settings</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <div class="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service">
+                <img src="https://img.freepik.com/premium-vector/car-parts-set-icons-auto-spare-parts-repairs-vector-illustration-concept-car-spare-parts-can-be-used-as-logo-store-sale-spare-parts-web-banner-print-vector_153097-1752.jpg" alt="Automobile Spares">
+                <p>Automobile Spares</p>
+            </div>
+            <div class="service">
+                <img src="https://cdn.vectorstock.com/i/500p/02/14/isolated-monochrome-of-car-engine-vector-13620214.jpg" alt="Industrial Spares">
+                <p>Industrial Spares</p>
+            </div>
+            <div class="service">
+                <img src="https://i.pinimg.com/736x/13/38/7e/13387e963ff2a57ba8cc9ad0e37b057d.jpg" alt="Courier Services">
+                <p>Courier Services</p>
+            </div>
+            <div class="service">
+                <img src="https://media.istockphoto.com/id/1258120405/vector/farm-food-delivery-service-pickup-truck-with-vegetables-vector-illustration.jpg?s=612x612&w=0&k=20&c=Dm7hfq3D0ZdqoWUJy9QEtEItCfPvM2pMSxKus5_9FSI=" alt="Grocery Services">
+                <p>Grocery Services</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="heading">
+        <h2>Our Products</h2>
+        <h3>If you want to know more about this, press Access option below:</h3>
+    </div>
+
+    <div class="heading">
+        <h2>Access Spiway App</h2>
+        <button class="app-access-btn" onclick="redirectToApp()">Open Spiway App</button>
+    </div>
+    <script>
+        function toggleMenu() {
+        let navLinks = document.querySelector(".nav-links");
+        navLinks.classList.toggle("show");
+    }
+        function redirectToApp() {
+            let userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            if (/android/i.test(userAgent)) {
+
+                window.location.href = "https://play.google.com/store/apps/details?id=com.spiway";
+            } else if (/iPad|iPhone|iPod/.test(userAgent)) {
+
+                window.location.href = "https://www.apple.com/app-store/"; 
+            } else if (/Mac/i.test(userAgent)) {
+
+                window.location.href = "https://www.apple.com/app-store/"; 
+            } else {
+
+                window.location.href = "https://play.google.com/store/apps/details?id=com.spiway";
+            }
+        }
+    </script>
+
+    </body>
+    </html> 
