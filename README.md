@@ -30,6 +30,7 @@ The button detects the user's device and redirects them accordingly:
 /spiway-website
 │── index.html         # Main HTML file
 │── styles.css         # CSS file for styling
+│── script.js          # javascript file
 │── README.md          # Project documentation
 ```
 
